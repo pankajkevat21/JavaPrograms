@@ -22,6 +22,6 @@ public class SimpleServer {
         });
 
         server.start();
-        System.out.println("Server started at http://localhost:8080");
+        System.out.println("Server   started at http://localhost:8080");
     }
 }
