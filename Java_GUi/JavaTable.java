@@ -1,6 +1,6 @@
 package Java_GUi;
 import  javax.swing.*;
-public class Main {
+public  class JavaTable {
 public static void main(String[] args) {
     JFrame frame = new JFrame("Main Frame");
     frame.setSize(400,400);
