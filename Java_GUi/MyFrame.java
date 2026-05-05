@@ -6,7 +6,6 @@ public class MyFrame {
 
     private static JFrame frame;   // static (global access)
 
-    // private constructor (object create nahi kar paoge bahar se)
     private MyFrame() {}
 
     public static JFrame getFrame() {
