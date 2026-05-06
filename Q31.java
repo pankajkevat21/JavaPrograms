@@ -8,6 +8,7 @@ public class Q31 {
             char ch = name.charAt(i);
             if(ch>='a' && ch<='z'){
                 opposite+= (char) (ch-32);
+
             } else if (ch>='A'&& ch<='Z') {
                 opposite+= (char) (ch+32);
              }
