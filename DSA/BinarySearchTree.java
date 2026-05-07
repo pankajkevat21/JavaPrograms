@@ -50,7 +50,7 @@ public  static void preorder(Tree root)
         Tree root = null;
 
         while (true) {
-            System.out.print("Enter no (0->break): ");
+            System.out.print("Enter no (0-=break): ");
             int data = sc.nextInt();
 
             if (data == 0) {
