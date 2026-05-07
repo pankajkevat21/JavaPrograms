@@ -21,6 +21,7 @@ public class BinarySearch {
         int result =binary(nums, target);
         if(result==-1)
         {
+            System.out.println("Enter the array");
             System.out.println("element not present in this array");
         }
         else {
