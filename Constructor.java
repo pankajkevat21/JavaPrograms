@@ -3,13 +3,13 @@ class Base1{
         System.out.println("I am base1 class defualt constructor");
     }
     Base1(int k){
-        System.out.println("i am single parameter constructor "+k);
+        System.out.println("i am single parameter constructor of class Base1"+k);
     }
     Base1(int k, int l){
         System.out.println("i am double parametrerized constructor and sum:"+(k+l));
     }
 }
-class  Derived extends Base1{
+class  Derived extends Base1 {
     Derived(){
         System.out.println("i am derived class default constructor");
     }
@@ -22,6 +22,7 @@ class  Derived extends Base1{
 }
 public class Constructor {
     public static void main(String[] args) {
-        Derived d1 = new Derived();
+       // Derived d1 = new Derived();
+        Derived d2 = new Derived(5);
     }
 }
