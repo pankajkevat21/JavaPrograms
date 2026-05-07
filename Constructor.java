@@ -9,7 +9,7 @@ class Base1{
         System.out.println("i am double parametrerized constructor and sum:"+(k+l));
     }
 }
-class  Derived {
+class  Derived extends Base1{
     Derived(){
         System.out.println("i am derived class default constructor");
     }
