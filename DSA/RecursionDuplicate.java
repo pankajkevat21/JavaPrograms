@@ -16,7 +16,7 @@ public class RecursionDuplicate {
         }
     }
     public static void main(String[] args) {
-        String str = "abbdcdaldlhgathaen change ";
+        String str = "abbdcdaldlhgathaen";
         RemoveDuplicateElement(str,0,"");
 
     }
