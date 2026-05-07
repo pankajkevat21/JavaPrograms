@@ -2,16 +2,19 @@ package JavaErrors;
 
 public class TrynCatch {
     public static void main(String[] args) {
-        int arr[] = {10,345,2,6,6};
         try {
-            System.out.println(arr[0]);
+            int[] numbers = {1, 2, 3};
+            System.out.println(numbers[10]);  // ArrayIndexOutOfBoundsException
+            int result = 10 / 0;              // ArithmeticException
         }
-        catch (Exception e)
-        {
-            System.out.println("Something went wrong");
+        catch (ArrayIndexOutOfBoundsException e) {
+            System.out.println("Array index does not exist.");
         }
-        finally {
-            System.out.println("the try-catch are finished");
+        catch (ArithmeticException e) {
+            System.out.println("Cannot divide by zero.");
+        }
+        catch (Exception e) {
+            System.out.println("Something else went wrong.");
         }
     }
 }
