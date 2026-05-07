@@ -10,5 +10,8 @@ public class TrynCatch {
         {
             System.out.println("Something went wrong");
         }
+        finally {
+            System.out.println("the try-catch are finished");
+        }
     }
 }
