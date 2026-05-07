@@ -1,3 +1,4 @@
+package DSA;
 public class RecursionDuplicate {
     static boolean map[]= new boolean[26];
     static void RemoveDuplicateElement(String str, int idx, String newStr){
