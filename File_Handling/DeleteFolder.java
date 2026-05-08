@@ -7,7 +7,7 @@ public class DeleteFolder {
         if (myObj.delete()) {
             System.out.println("Deleted the folder: " + myObj.getName());
         } else {
-            System.out.println("Failed to delete the folder.");
+            System.out.println("Failed to delete the folder. and feature branch added in the github");
         }
     }
 }
