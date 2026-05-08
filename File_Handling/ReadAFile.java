@@ -5,8 +5,7 @@ import java.util.Scanner;             // Import the Scanner class to read text f
 
 public class ReadAFile {
     public static void main(String[] args) {
-        File myObj = new File("filename.txt");
-
+        File myObj = new File("filename.txt" );
         // try-with-resources: Scanner will be closed automatically
         try (Scanner myReader = new Scanner(myObj)) {
             while (myReader.hasNextLine()) {
@@ -14,7 +13,7 @@ public class ReadAFile {
                 System.out.println(data);
             }
         } catch (FileNotFoundException e) {
-            System.out.println("An error occurred.");
+            System.out.println("An  e1 error occurred.");
             e.printStackTrace();
         }
     }
