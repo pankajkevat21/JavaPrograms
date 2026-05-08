@@ -4,7 +4,7 @@ import  java.io.IOException;
 public class CreateFile {
     public static void main(String[] args) {
         try{
-            File obj = new File("C:\\Users\\filename.txt");
+            File obj = new File("C:\\Users\\pankajfilewithjava.txt");
             if(obj.createNewFile()){
                 System.out.println("File created: " +obj.getName());
             }
