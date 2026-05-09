@@ -1,18 +1,25 @@
 package File_Handling;
+
 import java.io.File;
-import  java.io.IOException;
+import java.io.IOException;
+
 public class CreateFile {
+
     public static void main(String[] args) {
-        try{
-            File obj = new File("C:\\Users\\pankajfilewithjava.txt");
-            if(obj.createNewFile()){
-                System.out.println("File created: " +obj.getName());
+
+        try {
+
+            File obj = new File("C:\\Users\\panka\\Desktop\\filewithjava.txt");
+
+            if (obj.createNewFile()) {
+                System.out.println("File created: " + obj.getAbsolutePath());
+            } else {
+                System.out.println("File already exists");
             }
-            else
-                System.out.println("file already exist");
 
         } catch (IOException e) {
-            throw new RuntimeException(e);
+            System.out.println("Error occurred");
+            e.printStackTrace();
         }
     }
 }

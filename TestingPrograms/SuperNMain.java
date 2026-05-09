@@ -1,3 +1,4 @@
+package  TestingPrograms;
 class Animal1 {
     String color = "White";
 

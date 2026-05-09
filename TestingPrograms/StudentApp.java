@@ -1,7 +1,7 @@
+package  TestingPrograms;
 import javax.swing.*;
 import java.awt.event.*;
 import java.util.ArrayList;
-
 // Backend class (Data storage)
 class Student {
     int id;
