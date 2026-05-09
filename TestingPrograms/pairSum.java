@@ -47,7 +47,7 @@ public class pairSum {
 
         int arr[] = {2, 7, 11, 13};
 
-        int[] result = pairAdd1(arr, 19);
+        int[] result = pairAdd1(arr, 18);
 
         for (int x : result) {
             System.out.print(x + " ");
