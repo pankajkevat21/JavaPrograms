@@ -15,6 +15,7 @@ public class CopyFile {
             }
 
             System.out.println("File copied successfully.");
+            System.out.println("File copied successfully.");
 
         } catch (IOException e) {
             System.out.println("Error handling file.");
