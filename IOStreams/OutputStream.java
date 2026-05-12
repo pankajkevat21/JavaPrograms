@@ -14,8 +14,6 @@ public class OutputStream {
             System.out.println("Successfully wrote to file.");
         } catch (IOException e) {
             System.out.println("Error writing file.");
-            System.out.println("Error writing file.");
-            System.out.println("Error writing file.");
             e.printStackTrace();
         }
     }
