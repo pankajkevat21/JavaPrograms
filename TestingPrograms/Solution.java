@@ -1,16 +1,19 @@
-package  TestingPrograms;
-import  java.util.ArrayList;
+package TestingPrograms;
+class Box<T>
+{
+    T  value;// T is a placeholder for any data type
+    void set(T value){
+        this.value = value;
+}
+T get() {
+        return value;
+}
+
+}
 class Solution{
     public static void main(String[] args) {
-        ArrayList<Integer> arr = new ArrayList<>();
-        ArrayList<Double> arr2 = new ArrayList<>();
-       Integer myint = 8;
-        System.out.println(myint.intValue());
-        Integer my = 1000;
-        String mystr = my.toString();
-        System.out.println(mystr.length());
-
-
-     }
-
+        Box<String> bx = new Box<>();
+        bx.set("pankaj");
+        System.out.println("value:"+bx.get());
+    }
 }
