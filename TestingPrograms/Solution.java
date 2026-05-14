@@ -15,5 +15,8 @@ class Solution{
         Box<String> bx = new Box<>();
         bx.set("pankaj");
         System.out.println("value:"+bx.get());
+        Box<Integer> it = new Box<>();
+        it.set(50);
+        System.out.println("value:"+it.get());
     }
 }
