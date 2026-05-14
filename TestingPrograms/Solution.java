@@ -1,5 +1,5 @@
 package TestingPrograms;
-class Stats<T extends Number>
+class Stats<T extends String>
 {
     T[]   nums;
     Stats(T[] nums){
@@ -16,7 +16,7 @@ class Stats<T extends Number>
 public class Solution{
     public static void main(String[] args) {
         Integer[] intNums = {10, 20, 30, 40};
-        Stats<Integer> intStats = new Stats<>(intNums);
+        Stats<Integer> intStats = new Stats<Integer>(intNums);
         System.out.println("Integer average: " + intStats.average());
 
         // Use with Double
