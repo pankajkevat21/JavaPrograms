@@ -1,5 +1,5 @@
 package TestingPrograms;
-class Stats<T extends String>
+class Stats<T extends Number>
 {
     T[]   nums;
     Stats(T[] nums){
