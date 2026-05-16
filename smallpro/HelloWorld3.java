@@ -9,29 +9,5 @@ public class HelloWorld3 {
             System.out.println("Even");
         else
             System.out.println("Odd");
-        System.out.println("Odd");
-        System.out.println("Odd");
-        System.out.println("Odd");
-        System.out.println("Odd");
-        System.out.println("Odd");
-        System.out.println("Odd");
-        System.out.println("Odd");
-        System.out.println("Odd");
-        System.out.println("Odd");
-        System.out.println("Odd");
-        System.out.println("Odd");
-        System.out.println("Odd");
-        System.out.println("Odd");
-        System.out.println("Odd");
-        System.out.println("Odd");
-        System.out.println("Odd");
-        System.out.println("Odd");
-        System.out.println("Odd");
-        System.out.println("Odd");
-        System.out.println("Odd");
-        System.out.println("Odd");
-        System.out.println("Odd");
-        System.out.println("Odd");
-        System.out.println("Odd");
     }
 }
