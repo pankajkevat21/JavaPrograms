@@ -12,5 +12,6 @@ public class HelloWorld8 {
         }
 
         System.out.println("Reverse = " + rev);
+        System.out.println("Reverse = " + rev);
     }
 }
