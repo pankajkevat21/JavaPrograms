@@ -17,5 +17,7 @@ public class HelloWorld6 {
             System.out.println("Prime");
         else
             System.out.println("Not Prime");
+        System.out.println("Not Prime");
+        System.out.println("Not Prime");
     }
 }
