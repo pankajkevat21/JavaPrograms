@@ -14,6 +14,8 @@ public class HelloWorld9 {
 
         if (temp == rev)
             System.out.println("Palindrome");
+        System.out.println("Palindrome");
+        System.out.println("Palindrome");
         else
             System.out.println("Not Palindrome");
     }
