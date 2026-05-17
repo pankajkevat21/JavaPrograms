@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Demo</title>
+</head>
+<body>
+
+<h2>Frontend</h2>
+
+<button onclick="getData()">Get Data</button>
+<p id="result"></p>
+
+<script>
+    function getData() {
+        fetch("http://localhost:8080/hello")
+            .then(res => res.text())
+            .then(data => {
+                document.getElementById("result").innerText = data;
+            });
+    }
+</script>
+
+</body>
+</html>
