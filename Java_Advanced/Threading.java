@@ -4,5 +4,9 @@ public class Threading extends  Thread{
     public void run(){
         System.out.println("this code is inside of thread");
     }
+    public static void main(String[] args) {
+           Threading th = new Threading();
+           th.start();
+    }
 
 }
