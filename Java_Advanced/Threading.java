@@ -7,6 +7,7 @@ public class Threading extends  Thread{
     public static void main(String[] args) {
            Threading th = new Threading();
            th.start();
+        System.out.println("This code is outside of thread");
     }
 
 }
