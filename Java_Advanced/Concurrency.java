@@ -5,9 +5,14 @@ public class Concurrency  extends Thread{
     public static void main(String[] args) {
         Concurrency cn = new Concurrency();
         cn.start();
-        System.out.println(amount);
+        while (cn.isAlive())
+        {
+            System.out.println("Waiting");
+        }
+        System.out.println("Main:"+amount);
         amount++;
-        System.out.println(amount);
+        System.out.println("Main:"+amount);
+
 
     }
     public void run(){
