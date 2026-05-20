@@ -14,7 +14,7 @@ class Graphs{
         }
     }
     // Edge add karne ka method
-    void addEdge(int src, int dest) {
+    void addEdge(char src, char dest) {
         adjList.get(src).add(dest);
         adjList.get(dest).add(src);
     }
@@ -33,14 +33,24 @@ class Graphs{
 public class Create_Graph {
     public static void main(String[] args) {
         System.out.println("I am creating a new branch and working in together");
-        Graphs g = new Graphs(5);
-        g.addEdge(0, 1);
-        g.addEdge(0, 4);
-        g.addEdge(1, 2);
-        g.addEdge(1, 3);
-        g.addEdge(1, 4);
-        g.addEdge(2, 3);
-        g.addEdge(3, 4);
+        Graphs g = new Graphs(8);
+        g.addEdge('A', 'B');
+        g.addEdge('A', 'C');
+        g.addEdge('B', 'D');
+        g.addEdge('B', 'E');
+        g.addEdge('C', 'F');
+        g.addEdge('C', 'E');
+        g.addEdge('D', 'G');
+        g.addEdge('I', 'G');
+        g.addEdge('I', 'H');
+        g.addEdge('H', 'F');
+        g.addEdge('G', 'E');
+        g.addEdge('E', 'H');
+
+
+
+
+       
         g.printGraph();
     }
 }
