@@ -1,15 +1,16 @@
 package Graphs;
 import java.util.ArrayList;
-class Graphs {
+class Graphs{
     int V;
     ArrayList<ArrayList<Integer>> adjList;
-    Graphs(int V) {
-        this.V = V;
+    Graphs(int V){
+        this.V =V;
         adjList = new ArrayList<>();
+        for (int i = 0; i <V ; i++) {
+            {
+                adjList.add(new ArrayList<>());
+            }
 
-        // Empty lists add karo
-        for (int i = 0; i < V; i++) {
-            adjList.add(new ArrayList<>());
         }
     }
     // Edge add karne ka method
