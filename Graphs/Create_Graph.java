@@ -9,6 +9,7 @@ class Graphs {
 
     Graphs(int V) {
         this.V = V;
+        this.V = V;
 
         adjList = new ArrayList<>();
 
