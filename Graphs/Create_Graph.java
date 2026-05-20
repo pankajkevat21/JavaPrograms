@@ -7,6 +7,7 @@ class Graphs {
         this.V = V;
         adjList = new ArrayList<>();
         // Empty lists add karo
+        System.out.println("hey i  am learning java Advanced");
         for (int i = 0; i < V; i++) {
             adjList.add(new ArrayList<>());
         }
