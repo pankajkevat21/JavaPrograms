@@ -6,7 +6,7 @@ class Graphs {
     Graphs(int V) {
         this.V = V;
         adjList = new ArrayList<>();
-        adjList = new ArrayList<>();
+
         // Empty lists add karo
         for (int i = 0; i < V; i++) {
             adjList.add(new ArrayList<>());
