@@ -73,7 +73,7 @@ class Graph {
     }
 }
 
-public class BFS_Traversal {
+public class BFS_DFS_Traversal {
 
     public static void main(String[] args)
     {
