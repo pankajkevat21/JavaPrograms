@@ -10,6 +10,12 @@ public class Q16SwapValues
         b = a ^ b;
         a = a ^ b;
 
+        /*  using multiple and division method
+        a = a * b;
+        b = a / b;
+        a = a / b;
+
+         */
         System.out.println("a = " + a);
         System.out.println("b = " + b);
     }
