@@ -1,6 +1,6 @@
 package AcroQuestions;
-public class Q16SwapValues
-{
+
+public class Q16SwapValues {
     public static void main(String[] args) {
 
         int a = 10;
@@ -15,6 +15,10 @@ public class Q16SwapValues
         b = a / b;
         a = a / b;
 
+// using + & - method
+        a = a + b;
+        b = a - b;
+        a = a - b;
          */
         System.out.println("a = " + a);
         System.out.println("b = " + b);
