@@ -18,7 +18,7 @@ public class Solution{
         Integer[] intNums = {10, 20, 30, 40};
         Stats<Integer> intStats = new Stats<Integer>(intNums);
         System.out.println("Integer average: " + intStats.average());
-
+        System.out.println((3+4)+"jdk"+(1+0.5)+"java"+(7+9));
         // Use with Double
         Double[] doubleNums = {1.5, 2.5, 3.5};
         Stats<Double> doubleStats = new Stats<>(doubleNums);
