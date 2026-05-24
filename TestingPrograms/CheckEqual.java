@@ -1,17 +1,24 @@
 package TestingPrograms;
 import java.util.*;
 public class CheckEqual {
+    static void reverse(int[] arr, int start, int end) {
+
+        if(start >= end)
+            return;
+
+        int temp = arr[start];
+        arr[start] = arr[end];
+        arr[end] = temp;
+
+        reverse(arr, start+1, end-1);
+    }
+
     public static void main(String[] args) {
 
         int[] arr = {1,2,3,4,5};
-        int[] rev = new int[arr.length];
 
-        for(int i=0; i<arr.length; i++) {
-            rev[i] = arr[arr.length-1-i];
-        }
+        reverse(arr, 0, arr.length-1);
 
-        for(int x : rev) {
-            System.out.print(x + " ");
-        }
+        System.out.println(Arrays.toString(arr));
     }
 }
