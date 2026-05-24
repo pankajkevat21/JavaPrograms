@@ -2,22 +2,16 @@ package TestingPrograms;
 import java.util.*;
 public class CheckEqual {
     public static void main(String[] args) {
-        int[] arr = {1, 2, 3, 4, 5};
 
-        int start = 0;
-        int end = arr.length - 1;
+        int[] arr = {1,2,3,4,5};
+        int[] rev = new int[arr.length];
 
-        while(start < end) {
-
-            // swap
-            int temp = arr[start];
-            arr[start] = arr[end];
-            arr[end] = temp;
-
-            start++;
-            end--;
+        for(int i=0; i<arr.length; i++) {
+            rev[i] = arr[arr.length-1-i];
         }
 
-        System.out.println(Arrays.toString(arr));
+        for(int x : rev) {
+            System.out.print(x + " ");
+        }
     }
 }
