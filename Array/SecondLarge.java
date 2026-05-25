@@ -8,6 +8,7 @@ public class SecondLarge {
 
         int largest = Integer.MIN_VALUE;
         int secondlargest = Integer.MIN_VALUE;
+        System.out.println(largest+" " +  secondlargest);
 
         for(int i=0;i<arr.length;i++) {
 
