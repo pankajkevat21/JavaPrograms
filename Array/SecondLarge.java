@@ -21,26 +21,8 @@ public class SecondLarge {
                 secondlargest = arr[i];
             }
         }
-        System.out.println("Second Largest = " + secondlargest);
-        System.out.println("Second Largest = " + secondlargest);
-        System.out.println("Second Largest = " + secondlargest);
-        System.out.println("Second Largest = " + secondlargest);
-        System.out.println("Second Largest = " + secondlargest);
-        System.out.println("Second Largest = " + secondlargest);
-        System.out.println("Second Largest = " + secondlargest);
-        System.out.println("Second Largest = " + secondlargest);
-        System.out.println("Second Largest = " + secondlargest);
-        System.out.println("Second Largest = " + secondlargest);
-        System.out.println("Second Largest = " + secondlargest);
-        System.out.println("Second Largest = " + secondlargest);
-        System.out.println("Second Largest = " + secondlargest);
-        System.out.println("Second Largest = " + secondlargest);
 
         System.out.println("Largest = " + largest);
-        System.out.println("Second Largest = " + secondlargest);
-        System.out.println("Second Largest = " + secondlargest);
-        System.out.println("Second Largest = " + secondlargest);
-        System.out.println("Second Largest = " + secondlargest);
         System.out.println("Second Largest = " + secondlargest);
     }
 }
