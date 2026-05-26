@@ -25,5 +25,6 @@ public class SecondLarge {
         System.out.println("Largest = " + largest);
         System.out.println("Second Largest = " + secondlargest);
         System.out.println("Second Largest = " + secondlargest);
+        System.out.println("Second Largest = " + secondlargest);
         System.out.println("Second Largest = " + secondlargest);}
 }
