@@ -22,10 +22,12 @@ public class create {
                     "INSERT INTO student VALUES(107,'Pankaj')";
 
             String query2 =
-                    "INSERT INTO student VALUES(108,'Sujeet')";
+                    "INSERT INTO student VALUES(107,'Pankaj')";
 
             stm.executeUpdate(query1);
-            stm.executeUpdate(query2);
+
+            String query3 = "DELETE FROM student WHERE id = 107";
+            stm.executeUpdate(query3);
 
             System.out.println("Data inserted");
 
