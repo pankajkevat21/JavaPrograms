@@ -31,6 +31,7 @@ public class create {
 
             System.out.println("Data inserted");
             System.out.println("Data inserted");
+            System.out.println("Data inserted");
 
             con.close();
 
