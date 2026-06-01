@@ -28,6 +28,7 @@ public class create {
 
             String query3 = "DELETE FROM student WHERE id = 107";
             stm.executeUpdate(query3);
+            System.out.println("Data inserted");
 
             System.out.println("Data inserted");
 
