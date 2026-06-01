@@ -30,6 +30,7 @@ public class create {
             stm.executeUpdate(query3);
 
             System.out.println("Data inserted");
+            System.out.println("Data inserted");
 
             con.close();
 
