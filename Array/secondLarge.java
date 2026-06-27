@@ -28,6 +28,7 @@ public class secondLarge {
         if (secondLargest == Integer.MIN_VALUE) {
 
             System.out.println("Second largest element does not exist.");
+            System.out.println("Second largest element does not exist.");
 
         } else {
 
