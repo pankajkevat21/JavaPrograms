@@ -2,29 +2,19 @@ package Array;
 
 public class pairsum {
     public int[] pairMethod(int[] arr, int target, int n) {
-        // Left pointer starts from the beginning
         int i = 0;
-
-        // Right pointer starts from the last index
         while (i < n) {
             int sum = arr[i] + arr[n];
-
-            // Pair found
             if (sum == target) {
                 return new int[]{i, n};
             }
-
-            // Sum is smaller than target, move left pointer forward
             if (sum < target) {
                 i++;
             }
-            // Sum is greater than target, move right pointer backward
             else {
                 n--;
             }
         }
-
-        // No valid pair found
         return new int[]{-1, -1};
     }
     public static void main(String[] args) {
