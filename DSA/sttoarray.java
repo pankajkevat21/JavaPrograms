@@ -1,4 +1,7 @@
-package PACKAGE_NAME;
-
 public class sttoarray {
+    public static void main(String args[]){
+        int[] arr = new int[20];
+
+
+    }
 }
