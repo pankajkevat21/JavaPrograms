@@ -1,43 +1,19 @@
 package TestingPrograms;
-import java.util.*;
-class Node {
-    int data;
-    Node next;
-
-    Node(int data) {
-        this.data = data;
-        this.next = null;
-    }
-}
-
-
 public class List {
+
+    static float factorialRecursive(float n) {
+        // FIX: Base case must return 1 to stop the recursion.
+        if (n == 0 || n == 1) {
+            return 1;
+        }
+
+        // Recursive call.
+        return n * factorialRecursive(n - 1);
+    }
+
     public static void main(String[] args) {
-        Node head = null, temp = null, node;
-        Scanner sc = new Scanner(System.in);
-        while(true){
-            System.out.println("Enter a number:");
-    int   k = sc.nextInt();
-            if(k==0){
-                break;
-            }
-            node = new Node(k);
-            if(head==null){
-                head = node;
-                temp = node;
-            }
-            else {
-                temp.next = node;
-                temp = node;
-            }
+        float number = 5;
 
-            break;
-        }
-        temp = head;
-
-        while (temp != null) {
-            System.out.print(temp+" ");
-            temp = temp.next;
-        }
+        System.out.println("Factorial using Recursion = " + factorialRecursive(number));
     }
 }
