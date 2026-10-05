@@ -1,35 +1,34 @@
+import java.util.Arrays;
+class Main {
 
+    public static int longestValidParentheses(String s) {
+        char stack[] = new char[s.length()];
+        int count = 0;
+        int top = -1;
+        for (int i = 0; i < s.length(); i++) {
+            if (s.charAt(i) == '(') {
 
-public class Main
-{
-    public int maxProduct(int[] arr) {
-        int largest =arr[0];
-        int secondLargest = largest;
-        for (int i = 0; i < arr.length; i++) {
-            if (arr[i] > largest) {
-                secondLargest = largest;
-                largest = arr[i];
-            } else if (arr[i] > secondLargest && arr[i] != largest) {
-                secondLargest = arr[i];
+                stack[++top] = s.charAt(i);
+            }
+            if (s.charAt(i) == ')') {
+                if (top >= 0 && stack[top] == '(') {
+                    count += 2;
+                    top--;
+                } else {
+                    stack[++top] = s.charAt(i);
+
+                }
             }
         }
-        System.out.println(secondLargest);
-        System.out.println(largest);
-        secondLargest -= 1;
-        largest -= 1;
-        return secondLargest*largest;
 
+        return count;
     }
     public static void main(String[] args) {
+        Main obj = new Main();
+        String check ="()(()";
 
-        Main mn = new Main();
-        //	int arr2[] = {1,5,4,5}; //12
-        int arr1[] = {3,4,5,2};//16
-        int arr3[] = {3,7};//12
-        mn.maxProduct(arr1);
-// 		System.out.println(mn.maxProduct(arr1));
-// 		System.out.println(mn.maxProduct(arr2));
-// 		System.out.println(mn.maxProduct(arr3));
-// 		//
+
+        System.out.println(longestValidParentheses(check));
+
     }
 }
