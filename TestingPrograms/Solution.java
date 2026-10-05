@@ -1,27 +1,21 @@
 package TestingPrograms;
-class Stats<T extends Number>
-{
-    T[]   nums;
-    Stats(T[] nums){
-        this.nums = nums;
-    }
-    double average() {
-        double sum = 0;
-        for (T num : nums) {
-            sum += num.doubleValue();
+public class Solution {
+    public static  int maxSubArray(int[] nums) {
+        int Curr =0;
+        int max =Integer.MIN_VALUE;
+        for(int i =0;i<nums.length;i++){
+            Curr += nums[i];
+            max = Math.max(max,Curr);
+            if(Curr<0){
+                Curr =0;
+            }
         }
-        return sum / nums.length;
+        return max;
     }
-}
-public class Solution{
     public static void main(String[] args) {
-        Integer[] intNums = {10, 20, 30, 40};
-        Stats<Integer> intStats = new Stats<Integer>(intNums);
-        System.out.println("Integer average: " + intStats.average());
-        System.out.println((3+4)+"jdk"+(1+0.5)+"java"+(7+9));
-        // Use with Double
-        Double[] doubleNums = {1.5, 2.5, 3.5};
-        Stats<Double> doubleStats = new Stats<>(doubleNums);
-        System.out.println("Double average: " + doubleStats.average());
+
+        int[] nums ={-2, -1, -3};
+
+        System.out.println(maxSubArray(nums));
     }
 }
